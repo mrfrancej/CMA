@@ -9,6 +9,7 @@ export const ContactCard = props => {
 	});
 
 	return (
+        // point it to the API 
 		<li className="list-group-item">
 			<div className="row w-100">
 				<div className="col-12 col-sm-6 col-md-3 px-0">

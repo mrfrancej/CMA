@@ -3,12 +3,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 
 export const Home = () => {
-    const [contactList, setContactList] = useState([]);
-    const getContactlist = () => {
-        fetch("https://assets.breatheco.de/apis/fake/contact/agenda/france_agenda")
-            .then(response => response.json())
-            .then(res => setContactList(res));
-    };
+   
     {
 
         return (
