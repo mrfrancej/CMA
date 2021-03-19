@@ -5,7 +5,7 @@ export const AddContact = () => {
 	return (
 		<div className="container">
 			<div>
-				<h1 className="text-center mt-5">Add a new contact</h1>
+				<h1 className="text-center mt-5">Add A New Contact</h1>
 				<form>
 					<div className="form-group">
 						<label>Full Name</label>
@@ -23,7 +23,8 @@ export const AddContact = () => {
 						<label>Address</label>
 						<input type="text" className="form-control" placeholder="Enter address" />
 					</div>
-					<button type="button" className="btn btn-primary form-control">
+					{/* point the save btn to the api */}
+					<button type="button" className="btn btn-primary form-control" to="#">
 						save
 					</button>
 					<Link className="mt-3 w-100 text-center" to="/">

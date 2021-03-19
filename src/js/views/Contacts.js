@@ -13,16 +13,16 @@ export const Contacts = () => {
 		<div className="container">
 			<div>
 				<p className="text-right my-3">
-					<Link className="btn btn-success" to="/add">
+					<Link className="btn btn-primary" to="/add">
 						Add new contact
 					</Link>
 				</p>
 				<div id="contacts" className="panel-collapse collapse show" aria-expanded="true">
 					<ul className="list-group pull-down" id="contact-list">
 						<ContactCard onDelete={() => setState({ showModal: true })} />
-						<ContactCard />
-						<ContactCard />
-						<ContactCard />
+						{/* <ContactCard /> */}
+						{/* <ContactCard />
+						<ContactCard /> */}
 					</ul>
 				</div>
 			</div>

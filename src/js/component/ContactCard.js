@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import MikePhoto from "../../img/m101.jpg";
+import { Context } from "../store/appContext";
 
 export const ContactCard = props => {
 	const [state, setState] = useState({
 		//initialize state here
 	});
-
+	const { store, action } = useContext(Context);
+	console.log("store", store.contact);
 	return (
-        // point it to the API 
+		// point it to the API
+
 		<li className="list-group-item">
 			<div className="row w-100">
 				<div className="col-12 col-sm-6 col-md-3 px-0">
